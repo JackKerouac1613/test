@@ -1,0 +1,203 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    font-family: 'Arial', 'sans-serif';
+}
+
+:root {
+    --color-white: #FFFFFF;
+    --color-indigo: #272C4C;
+    --color-gray: #3E3C3C;
+    --color-black-blue: #273170;
+    --color-yellow: #FFBA00;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: var(--color-indigo);
+    font-family: 'Helvetica';
+    font-style: normal;
+    margin: 0;
+}
+
+.text {
+    margin: 0;
+}
+
+.btn {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/Helvetica_regular.woff');
+	src: local('Helvetica Regular'), local('Helvetica_regular'),
+		url('../fonts/Helvetica-regular.woff2'), format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+.catalog {
+    margin: 60px 0;
+}
+
+.catatlog-title {
+    margin-bottom: 23px;
+    letter-spacing: 1px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.checkbox {
+    display: inline-flex;
+    width: 13px;
+    height: 13px;
+    align-items: center;
+    border-radius: 2px;
+    background-color: #CBD4EC;
+    margin-right: 9px;
+    justify-content: center;
+}
+
+.checkbox-text {
+    color: var(--color-gray);
+    font-size: 12px;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.catalog-item {
+    border-radius: 5px;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 13px 0px rgba(69, 85, 185, 0.20);
+    transition: box-shadow .3s ease-in-out;
+}
+
+.catalog-item:not(:nth-child(3n)) {
+    margin-right: 93px;
+}
+
+.catalog-item:last-child {
+    margin-right: 0;
+}
+
+.catalog-item:not(:nth-child(n + 4)) {
+    margin-bottom: 93px;
+}
+
+.catalog-item:hover {
+    box-shadow: 0px 0px 20px 0px rgba(69, 85, 185, 0.40);
+}
+
+.item-btn:hover {
+    background-color: var(--color-black-blue);
+    color: var(--color-yellow);
+}
+
+.item-wrapper {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.item-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.item-picture {
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.item-text {
+    max-width: 240px;
+    color: var(--color-gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.item-btn {
+    padding: 15px 0;
+    color: var(--color-black-blue);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-yellow);
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.transition-list {
+    display: flex;
+}
+
+.transition-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--color-yellow);
+    background-color: var(--color-white);
+    cursor: pointer;
+    color: var(--color-gray);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.transition-item:not(:last-child) {
+    margin-right: 7px;
+}
+
+.active {
+    background-color: var(--color-yellow);
+    color: var(--color-white);
+    cursor: default;
+}
+
+.transition-points {
+    border: none;
+    cursor: default;
+}

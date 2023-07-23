@@ -1,0 +1,82 @@
+@media (max-width: 1250px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .catalog-item:not(:nth-child(3n)) {
+        margin-right: 0;
+    }
+    
+    .catalog-item:last-child {
+        margin-right: 0;
+    }
+    
+    .catalog-item:not(:nth-child(n + 5)) {
+        margin-bottom: 93px;
+    }
+
+    .catalog-item:not(:nth-child(2n)) {
+        margin-right: 93px;
+    }
+}
+
+@media (max-width: 440px) {  
+    .catalog {
+        margin: 40px 0;
+    }
+
+    .container {
+        max-width: 310px;
+    }
+
+    .catatlog-title {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .checkbox-wrapper {
+        flex-direction: column;
+    }
+
+    .checkbox-item {
+        margin-right: 0;
+    }
+
+    .checkbox-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .catalog-item:not(:nth-child(2n)) {
+        margin-right: 0;
+    }
+
+    .catalog-item:not(:nth-child(n + 3)) {
+        display: none;
+    }
+
+    .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .checkbox-text {
+        line-height: 20px;
+    }
+
+    .item_adaptive {
+        display: none;
+    }
+
+    .item-wrapper {
+        padding: 30px;
+    }
+
+    .transition-item {
+        width: 45px;
+        height: 45px;
+    }
+
+    .transition-item:not(:last-child) {
+        margin-right: 8px;
+    }
+}
