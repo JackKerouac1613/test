@@ -183,8 +183,6 @@ html {
     background-color: var(--color-white);
     cursor: pointer;
     color: var(--color-gray);
-    font-size: 16px;
-    font-weight: 400;
 }
 
 .transition-item:not(:last-child) {
