@@ -14,6 +14,7 @@ html {
     --color-gray: #3E3C3C;
     --color-black-blue: #273170;
     --color-yellow: #FFBA00;
+    --color-bg: #CBD4EC;
 }
 
 .list {
@@ -81,14 +82,52 @@ html {
 }
 
 .checkbox {
-    display: inline-flex;
     width: 13px;
     height: 13px;
-    align-items: center;
-    border-radius: 2px;
-    background-color: #CBD4EC;
+    border: none;
     margin-right: 9px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    position: relative;
+    background-color: var(--color-bg);
+}
+
+.checkbox input {
+    display: none;
+}
+
+.checkbox label {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+
+.checkbox span {
+    width: 4px;
+    height: 9px;
+    display: inline-block;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transform: rotate(45deg);
+    margin-bottom: 4px;
+}
+
+.checkbox #modern-checkbox-one:checked+span {
+    border-color: var(--color-black-blue);
+}
+
+.checkbox #modern-checkbox-two:checked+span {
+    border-color: var(--color-black-blue);
+}
+
+.checkbox #modern-checkbox-three:checked+span {
+    border-color: var(--color-black-blue);
 }
 
 .checkbox-text {
